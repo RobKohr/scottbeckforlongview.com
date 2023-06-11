@@ -55,7 +55,7 @@ const App: Component = () => {
 export function Footer() {
   return (
     <div class="footer" style="text-align:center; width:100%;font-size:0.9em">
-      Powered by <a href="https://solidjs.com">SolidJS</a>
+      {/* Powered by <a href="https://solidjs.com">SolidJS</a> */}
     </div>
   );
 }

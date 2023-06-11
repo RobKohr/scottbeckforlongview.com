@@ -1,13 +1,14 @@
 import { For } from "solid-js";
+import { candidateFirstName, donationLink } from "../constants";
 
 export default function Donation() {
   const donationAmounts: number[] = [25, 50, 100, 250];
 
   return (
     <div class="donation-box">
-      <form method="GET" action="https://secure.anedot.com/robert-kohr-for-longview-school-board/donate">
+      <form method="GET" action={donationLink}>
         <h3>Donate</h3>
-        <p>Help us bring charter schools to Longview</p>
+        <p>Help Elect {candidateFirstName}</p>
         <For each={donationAmounts}>
           {(amount) => (
             <div style="padding:0.3em">

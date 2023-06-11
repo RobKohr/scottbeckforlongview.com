@@ -15,43 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <link rel="shortcut icon" type="image/ico" href="/src/assets/favicon.ico" />
-    <title>Robert Kohr Jr for Longview School Board - Bringing Charter Schools To Longview, WA</title>
-    <script>
-      window.addEventListener("popstate", function (event) {
-        console.log("popstate fired!");
-      });
-      console.log("loaded3");
-      window.test = "test";
-      (() => {
-        let oldPushState = history.pushState;
-        history.pushState = function pushState() {
-          let ret = oldPushState.apply(this, arguments);
-          window.dispatchEvent(new Event("pushstate"));
-          window.dispatchEvent(new Event("locationchange"));
-          return ret;
-        };
-
-        let oldReplaceState = history.replaceState;
-        history.replaceState = function replaceState() {
-          let ret = oldReplaceState.apply(this, arguments);
-          window.dispatchEvent(new Event("replacestate"));
-          window.dispatchEvent(new Event("locationchange"));
-          return ret;
-        };
-
-        window.addEventListener("popstate", () => {
-          window.dispatchEvent(new Event("locationchange"));
-        });
-      })();
-
-      window.addEventListener("locationchange", function () {
-        pageLoad();
-      });
-      function pageLoad() {
-        console.log("location changed!" + window.test + "-" + window.location.pathname);
-      }
-      pageLoad();
-    </script>
+    <title>Scott Beck for Longview School Board</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

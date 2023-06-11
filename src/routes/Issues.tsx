@@ -3,55 +3,36 @@ export default function Issues() {
   return (
     <div class="section">
       <h2 id="issues">Issues</h2>
-      <h3>Charter Schools</h3>
-      <img src="/images/issues.jpg" class="picture-image" style="float:left" />
-      <p>
-        Charter schools are public schools that are independently operated. They are tuition-free and open to all students. Charter schools are held
-        accountable to state and federal academic standards. They are also held accountable to the promises made in their charter. If a charter school
-        does not meet these standards, it may be closed.
-      </p>
-      <p>
-        Charter schools are a great option for parents who want more involvement in their child's education. They offer a variety of educational
-        options, including online learning, project-based learning, and more.
-      </p>
-      <p>
-        In Washington State, charter schools are authorized by the Washington State Charter School Commission. The Commission is responsible for
-        approving and overseeing charter schools in Washington State. The Commission is also responsible for ensuring that charter schools are meeting
-        the needs of students and families.
-      </p>
-      <img src="/images/about3.jpg" class="picture-image" style="float:right" />
-      <p>
-        There are only 18 charter schools in Washington State. Part of the reason for this is because the the State Charter School Commission is not
-        doing enough to authorize charter schools.
-      </p>
-      <p>
-        Spokane Public Schools have worked around the State Charter School Commission by authorizing their own charter schools. This is a great
-        example of how local school districts can take the initiative to authorize charter schools.
-      </p>
-      <p>
-        To become an authorizer, the Longview School District would need to be an approved authorizer by the State Charter School Commission, and to
-        do so the school Board need only to go through the application process. The application process is not difficult, and the State Charter School
-        Commission is actively looking for more authorizers.
-      </p>
-      <p>
-        The problem lies in the fact that the <strong>Longview School Board has not taken the initiative to become an authorizer</strong>. The
-        Longview School Board has not even discussed the possibility of becoming an authorizer. This is a problem because the Longview School Board is
-        not doing enough to provide educational options for students and families.
-      </p>
-      <p>
-        <strong>Robert Kohr Jr</strong>, <strong>Scott Beck</strong>, and <strong>Karis Searcy</strong> are all running to replace the incumbents on
-        the Longview School Board. All three candidates support charter schools and will work to make the Longview School District an authorizer.
-      </p>
+      <img src="/images/about3.jpeg" class="picture-image" style="float:left" />
+
       <h3>Bullying</h3>
+
       <p>
-        Bullying is a serious problem in our schools. The Longview School Board has not done enough to address bullying. Following the direction from
-        the state board of education, the Longview School Board has adopted a policy that does not hold students accountable for their actions. This
-        policy is not working.
+        The Longview School district has a long history of sever bullying that has persisted for decades and continues still. From lifelong residents
+        of past generations I was greeted with astonishment at the thought of willingly enrolling my children here. It has been described as a good
+        ol’ boys club that sweeps it under the rug and searches for ways to excuse it. I will work to change that by encouraging staff to take
+        advantage of policies to hold accountable bullies, by holding staff accountable for their choices and actions/inaction, and by giving parents
+        a measure of accountability over the district and individual schools.
       </p>
+      <img src="/images/about4.jpeg" class="picture-image" style="float:right" />
+
+      <h3>School Choice</h3>
       <p>
-        The administration doesn't have clear metrics for disciplinary actions, and suspensions and expulsions are rarely used, and when they are
-        used, they are not applied in a consistent manner.
+        I support school choice, the first step of this is to establish Charter schools which is not a difficult process, the state board is actively
+        looking for school boards to take this initiative but our current board has failed to take this simple step to vastly improve the education
+        system in our district. Charter schools offer parents a measure of accountability by giving them an options to chose the school that fits
+        their student the best. After establishing charter schools the next step is to restructure so funds to educate children follow the children. I
+        am talking about actual school choice, where the funds go with the student to traditional public schools, charter schools, private schools or
+        even home schooling.
       </p>
+      <img src="/images/about5.jpeg" class="picture-image" style="float:left" />
+
+      <h3>Fiscal Responsibility</h3>
+      <p>
+        In the process of restructuring to allow parents the freedom to hold the district and schools accountable it is my goal to balance the budget
+        without relying on renewal of levies for essential school services.
+      </p>
+      <img src="/images/about6.jpeg" class="picture-image" style="float:right" />
     </div>
   );
 }

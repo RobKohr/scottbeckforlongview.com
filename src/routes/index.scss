@@ -6,11 +6,11 @@
     min-height: 550px;
     overflow: hidden;
     background: red;
-    background-image: url("/images/red-school.jpeg");
     background-size: cover;
     position: relative;
-
-    h1,
+    display: flex;
+    width: 100%;
+    align-content:stretch h1,
     h2 {
       color: white;
       text-shadow: 2px 2px 4px #000000;

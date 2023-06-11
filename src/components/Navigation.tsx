@@ -1,6 +1,7 @@
 import { A } from "@solidjs/router";
-import { For } from "solid-js";
+import { For, Show } from "solid-js";
 import { Route } from "../App";
+import { facebookLink, twitterLink } from "../constants";
 import "./Navigation.scss";
 
 export function Navigation(props: { routes: Route[] }) {
@@ -15,17 +16,19 @@ export function Navigation(props: { routes: Route[] }) {
           )}
         </For>
         <li>
-          <a href="https://facebook.com/RobertKohrJr">
+          <a href={facebookLink}>
             <img src="/images/facebook.png" style="width:1em;position:relative;top:2px;left:-3px" />
             Facebook
           </a>
         </li>
-        <li>
-          <a href="https://twitter.com/RobertKohrJr">
-            <img src="/images/twitter.png" style="width:1em;position:relative;top:2px;left:-3px" />
-            Twitter
-          </a>
-        </li>
+        <Show when={twitterLink}>
+          <li>
+            <a href={twitterLink}>
+              <img src="/images/twitter.png" style="width:1em;position:relative;top:2px;left:-3px" />
+              Twitter
+            </a>
+          </li>
+        </Show>
       </ul>
     </nav>
   );
