@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6P594WCHQJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-6P594WCHQJ");
+    </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="shortcut icon" type="image/ico" href="/src/assets/favicon.ico" />
+    <title>Robert Kohr Jr for Longview School Board - Bringing Charter Schools To Longview, WA</title>
+    <script>
+      window.addEventListener("popstate", function (event) {
+        console.log("popstate fired!");
+      });
+      console.log("loaded3");
+      window.test = "test";
+      (() => {
+        let oldPushState = history.pushState;
+        history.pushState = function pushState() {
+          let ret = oldPushState.apply(this, arguments);
+          window.dispatchEvent(new Event("pushstate"));
+          window.dispatchEvent(new Event("locationchange"));
+          return ret;
+        };
+
+        let oldReplaceState = history.replaceState;
+        history.replaceState = function replaceState() {
+          let ret = oldReplaceState.apply(this, arguments);
+          window.dispatchEvent(new Event("replacestate"));
+          window.dispatchEvent(new Event("locationchange"));
+          return ret;
+        };
+
+        window.addEventListener("popstate", () => {
+          window.dispatchEvent(new Event("locationchange"));
+        });
+      })();
+
+      window.addEventListener("locationchange", function () {
+        pageLoad();
+      });
+      function pageLoad() {
+        console.log("location changed!" + window.test + "-" + window.location.pathname);
+      }
+      pageLoad();
+    </script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+    <script src="/src/index.tsx" type="module"></script>
+  </body>
+</html>

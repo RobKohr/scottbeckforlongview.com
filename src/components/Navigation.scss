@@ -1,0 +1,29 @@
+nav{
+    //background:green;
+    display:block;
+    position:relative;
+    width:100%;
+    top:0px;
+    margin:0px;
+    padding:0px;
+    text-align: right;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(255,0,0,0) 75%);
+    z-index: 1;
+    height: 50px;
+    a{
+        color:white;
+        text-decoration: none;
+        &:hover{
+            color:yellow;
+        }
+    }
+    ul{
+        margin:0px;
+        padding-top:1em;
+        li{
+            display:inline;   
+            margin:0 1em;   
+        }
+    }
+}
